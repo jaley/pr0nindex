@@ -1,0 +1,6 @@
+pom.xml
+*jar
+war/WEB-INF/lib/
+war/WEB-INF/classes/
+.lein-failures
+.lein-deps-sum
