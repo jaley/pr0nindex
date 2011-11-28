@@ -12,7 +12,7 @@
   [phrase safe?]
   (URL.
    (format *url-format*
-           (str \" (URLEncoder/encode phrase "UTF-8") \")
+           (URLEncoder/encode (str \" phrase \") "UTF-8")
            *api-key*
            ({true "active", false "off"} safe?))))
 
