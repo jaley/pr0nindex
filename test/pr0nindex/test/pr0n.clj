@@ -4,7 +4,7 @@
 
 (defn pr0n?
   [phrase]
-  (> (pr0n-index phrase) 0.75))
+  (> (pr0n-index phrase) 0.8))
 (def npr0n? (complement pr0n?))
 
 (deftest test-pr0n-index-positive
@@ -24,6 +24,7 @@
   (is (npr0n? "jugs")))
 
 (deftest test-pr0n-index-garbage
+  (is (npr0n? nil))
   (is (npr0n? ""))
   (is (npr0n? "123 5432 1234 1"))
   (is (npr0n? "!!223 __ 123431")))

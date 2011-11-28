@@ -35,7 +35,8 @@
   "Return a value between 0 and 1, where 0 indicates unlikely offensive material,
    and 1 is almost certainly offensive."
   [phrase]
-  (when phrase
+  (if (nil? phrase)
+    0.0 ; guard for nil
     (let [hits_on  (hits (search! (make-url phrase true)))
           hits_off (hits (search! (make-url phrase false)))]
       (if (> hits_off 0)
