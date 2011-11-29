@@ -1,4 +1,4 @@
-(defproject pr0nindex "0.0.1-SNAPSHOT"
+(defproject pr0nindex "0.0.2"
   :description "GAE demo of the pr0n index."
   :dependencies [[org.clojure/clojure "1.2.1"]
                  [org.clojure/clojure-contrib "1.2.0"]
