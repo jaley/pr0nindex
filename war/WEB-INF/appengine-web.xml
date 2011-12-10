@@ -1,6 +1,10 @@
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
   <application>pr0nindex</application>
   <version>2</version>
-  <static-files />
+  <static-files>
+    <include path="/css/**.css" />
+    <include path="/js/**.js" />
+  </static-files>
+    
   <resource-files />
 </appengine-web-app>
