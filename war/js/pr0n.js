@@ -40,6 +40,16 @@ function doSearch(inputElem, gauge, label) {
 
 // Startup stuff
 $(function() {
+    $("#loading").hide();
+
+    $("#loading").ajaxStart(function(){
+        $(this).show();
+    });
+
+    $("#loading").ajaxStop(function(){
+        $(this).fadeOut('slow');
+    });
+
     var searchField = $("#search_field");
     var phraseField = $("#phrase_field");
     var gauge = $("#willy");

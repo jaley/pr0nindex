@@ -8,6 +8,13 @@
     padding: 5%;
 }
 
+#loading {
+    text-align: right;
+    background-color: black;
+    color: white;
+    padding: 1.0em;
+}
+
 #gauge_div {
     display: inline-block;
     text-align: left;
