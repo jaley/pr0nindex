@@ -11,7 +11,7 @@ String.prototype.repeat = function(n) {
  * Guess.
  */
 function makePenis(length) {
-    return "8" + "=".repeat(length) + "D";
+    return "8=" + "=".repeat(length) + "D";
 }
 
 /**
@@ -33,7 +33,7 @@ function doSearch(inputElem, gauge, label) {
         data: {p: p},
         success: function(data) {
             $(gauge).text(makePenis(Math.round(data.ratio * MAX_PENIS_LENGTH)));
-            $(label).text(makeLabel(data.phrase, Math.round(data.ratio)));
+            $(label).text(makeLabel(data.phrase, data.ratio));
         }
     });
 }
