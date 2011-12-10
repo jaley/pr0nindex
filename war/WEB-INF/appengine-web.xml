@@ -3,6 +3,7 @@
   <version>2</version>
   <static-files>
     <include path="/**.html" />
+    <include path="/**.ico" />
     <include path="/css/**.css" />
     <include path="/js/**.js" />
   </static-files>
