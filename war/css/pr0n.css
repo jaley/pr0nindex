@@ -8,6 +8,15 @@
     padding: 5%;
 }
 
+#gauge_div {
+    display: inline-block;
+    text-align: left;
+}
+
+#info {
+    font-style: italic;
+}
+
 h2 {
     font-weight: bold;
     text-align: center;
