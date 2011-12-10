@@ -13,6 +13,9 @@
     background-color: black;
     color: white;
     padding: 1.0em;
+    top: 0px;
+    right: 0px;
+    position: absolute;
 }
 
 #gauge_div {
@@ -24,11 +27,19 @@
     font-style: italic;
 }
 
+#ads {
+    margin-left:auto;
+    margin-right:auto;
+    align: center;
+    text-align: center;
+    width: 70%;
+}
+
 h2 {
     font-weight: bold;
     text-align: center;
 }
 
 * {
-    font-family: "monospace";
+    font-family: monospace;
 }
