@@ -2,6 +2,7 @@
   <application>pr0nindex</application>
   <version>2</version>
   <static-files>
+    <include path="/**.html" />
     <include path="/css/**.css" />
     <include path="/js/**.js" />
   </static-files>
