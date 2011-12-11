@@ -9,7 +9,7 @@
 
 (defn make-label
   [phrase index]
-  (format "The phrase \"%s\" is %1.2f%% pr0n!" phrase index))
+  (format "The phrase \"%s\" is %1.2f%% pr0n!" phrase (* 100 index)))
 
 (deftemplate permalink-template "templates/perm-template.html"
   [label penis]
