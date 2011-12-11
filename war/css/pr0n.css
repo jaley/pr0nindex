@@ -27,6 +27,20 @@
     font-style: italic;
 }
 
+#text_results {
+    font-weight: bold;
+}
+
+#links {
+    text-align: left;
+    padding: 4px;
+    margin-top: 15px;
+}
+
+.share-link {
+    padding: 2px;
+}
+
 #ads {
     margin-left:auto;
     margin-right:auto;
