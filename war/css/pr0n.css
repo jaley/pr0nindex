@@ -8,6 +8,14 @@
     padding: 5%;
 }
 
+#help_box {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+    bottom: 10%;
+}
+
 #loading {
     text-align: right;
     background-color: black;
@@ -47,6 +55,10 @@
     align: center;
     text-align: center;
     width: 70%;
+}
+
+.help_text {
+    text-align: left;
 }
 
 h2 {
