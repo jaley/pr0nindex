@@ -31,7 +31,7 @@
 
 (def clamp (comp (partial min 1) (partial max 0)))
 
-(defn pr0n-index
+(defn pr0n-index*
   "Return a value between 0 and 1, where 0 indicates unlikely offensive material,
    and 1 is almost certainly offensive."
   [phrase]
@@ -43,3 +43,4 @@
         (clamp (/ (- hits_off hits_on) hits_off))
         0.0))))
 
+(def pr0n-index (memoize pr0n-index*))
