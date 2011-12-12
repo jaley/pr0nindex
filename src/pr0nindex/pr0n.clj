@@ -29,7 +29,7 @@
     (Double/parseDouble res-count)
     0.0))
 
-(def clamp (comp (partial min 1) (partial max 0)))
+(def clamp (comp (partial min 1.0) (partial max 0.0)))
 
 (defn pr0n-index*
   "Return a value between 0 and 1, where 0 indicates unlikely offensive material,
